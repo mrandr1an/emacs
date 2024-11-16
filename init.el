@@ -25,7 +25,6 @@
                      :remote "tecosaur")
               :files (:defaults "etc")
               :build t
-	      :general
               :pre-build
               (with-temp-file "org-version.el"
                (require 'lisp-mnt)
