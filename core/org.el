@@ -86,29 +86,5 @@
 '(org-level-5 ((t (:inherit outline-5 :height 1.3))))
 )
 
+(setq org-agenda-files `("~/Documents/Agenda" "~/Projects/thesis/agenda"))
 
-  (setq org-capture-templates
-	'(
-	   ("t" "Todo" entry (file "~/Cloud/personal.org")
-	    "* TODO %^{Title} :TODO:\nSCHEDULED: %^{Scheduled to begin}t DEADLINE:
-%^{Deadline}T\n")
-	   ("m" "Meeting" entry (file "~/Cloud/personal.org")
-	    "* MEETING with %^{person} :MEETING:\n%^{At}T")
-
-	   ("i" "Idea" entry (file "~/Cloud/personal.org")
-	    "* %^{Title} :IDEA:\n%?")
-
-	   ("a" "Appointment" entry (file "~/Cloud/personal.org")
-	    "* APPOINTMENT with %^{person} :APPOINTMENT: \n%^{At}T")
-
-	   ("p" "Phonecall" entry (file "~/Cloud/personal.org")
-	    "* PHONECALL %^{person} :PHONECALL:\n%^{At}T")
-
-	   ("h" "HOMEWORK" entry (file (lambda () (capture-report-date-file "~/Cloud/school.org")))
-	    "* ASSESSMENT %^{Title} :HOMEWORK:\nSCHEDULED: %^{Scheduled to begin}t DEADLINE:
-%^{Deadline}T\n")
-
-	   )
-)
-
-(setq org-agenda-files `("~/Documents/Agenda")) 

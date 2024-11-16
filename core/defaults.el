@@ -29,10 +29,8 @@
 (set-face-attribute 'mode-line-inactive nil :height 130)
 
 ;;Set fonts and/or variable pitch or fixed pitch
-(set-face-attribute 'default nil :family "Fira Code Nerd Font Mono" :height 180 :weight 'regular)
-(set-face-attribute 'bold nil :family "Fira Code Nerd Font Mono" :height 180 :weight 'bold)
-(set-face-attribute 'italic nil :family "Fira Code Nerd Font Mono":height 180 :weight 'semilight :slant 'italic)
-(set-face-attribute 'variable-pitch nil :family "Fira Code Nerd Font Mono":height 190 :foreground )
+(set-face-attribute 'default nil :family "Iosevka Curly Slab" :height 150)
+(set-face-attribute 'variable-pitch nil :family "Iosevka Aile" :height 150)
 
 ;;Autofill mode from https://stackoverflow.com/questions/4879785/can-i-break-the-long-line-in-emacs-non-windows-to-the-next-line
 (auto-fill-mode 1)
@@ -40,3 +38,11 @@
 (use-package all-the-icons
   :ensure t
 )
+
+(use-package cdlatex
+  :ensure t 
+)
+
+(use-package auctex
+  :ensure t
+ )

@@ -4,6 +4,7 @@
 :init
   (setq evil-want-keybinding nil)
   (setq evil-want-integration t)
+  (setq evil-want-minibuffer t)
 :config
 (evil-set-undo-system 'undo-fu)
 (evil-mode)

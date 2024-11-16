@@ -2,3 +2,21 @@
 #+AUTHOR: Chris Liourtas
 
 * Emacs Config
+My emacs configuration meant for personal use and still in development. Repository is public
+in case anybody wants a plug and play experience with the features listed below.
+Features
+Optimized for writting, researching, publishing blogs and programming.
+- Well themed, consistent look (I think)
+- Evil Mode (Vim keybindings)
+- Support for multiple clients
+  - Matrix
+  - Email
+- Note Taking with org-roam and query system with org-roam-ql
+- Orderless Autocompletion with Corfu and Vertico
+- Programming Languages
+  - Rust (rustic, lsp-mode)
+  - C 
+  - Arduino (Wiring) with PlatformIO
+  - Common Lisp
+  - Haskell
+  - Python
